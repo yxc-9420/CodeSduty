@@ -1,0 +1,22 @@
+﻿git status
+本地仓库：
+    1、git init 创建，在当前目录下生成.git文件，
+    2、git clone 远程仓库地址 (别名)，在当前目录下生成文件名为别名或者仓库名的文件
+
+修改  添加到暂存区   提交到本地库   推送到远程仓库
+ git add (.|文件名)  添加到暂存区
+ git commit (-m "说明") 提交
+ git push -u origin main
+
+
+ 2.4 撤销
+    1、重新提交 git commit --amend
+    2、 $ git commit -m 'initial commit'
+        $ git add forgotten_file
+        $ git commit --amend 
+        此操作只会有一次提交记录
+    3、取消暂存的文件 
+        git reset HEAD 文件名
+    4、撤销修改
+        git checkout --文件名
+        
