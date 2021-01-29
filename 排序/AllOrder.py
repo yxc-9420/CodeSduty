@@ -20,7 +20,7 @@ class Solution:
             for j in range(i+1,len(self.arr)):
                 if(self.arr[minIndex]>self.arr[j]):
                     minIndex = j
-            if minIndex != i:
+            if minIndex != i:#如果最小索引 = i即此轮循环第一个即为最小值，不用交换
                 temp = self.arr[minIndex]
                 self.arr[minIndex] = self.arr[i]
                 self.arr[i] = temp
